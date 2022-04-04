@@ -46,7 +46,7 @@ public class AdminFilter implements Filter {
         if( roleId == 1) {
            chain.doFilter(request, response); 
         }
-        else if ( roleId == 2) {
+        else {
             httpResponse.sendRedirect("/notes");
         }
 
